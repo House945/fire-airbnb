@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark padding">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark paddington">
     <NuxtLink class="navbar-brand" to="/">Fire Airbnb</NuxtLink>
     <button
       class="navbar-toggler"
@@ -34,8 +34,8 @@
 export default {}
 </script>
 
-<style scoped>
-.padding {
+<style lang="css" scoped>
+.paddington {
   padding: 1.5rem;
   background-color: black;
 }

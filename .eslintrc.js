@@ -20,7 +20,7 @@ module.exports = {
     'vue/multi-word-component-names': [
       'error',
       {
-        ignores: ['products', 'index', 'state', '_id'],
+        ignores: ['products', 'default', 'index', 'state', '_id', 'error'],
       },
     ],
   },

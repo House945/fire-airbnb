@@ -1,7 +1,7 @@
 export const state = () => ({
   myRentals: [
     {
-      id: 1,
+      id: 100,
       title: '2L Portable & Safe',
       snippet:
         'Special access, beach, its perks, and a remote top-tier service beauty of at restaurants beyond the throughout the weekends go city.',
@@ -233,6 +233,12 @@ export const state = () => ({
 export const getters = {
   //          shit above  payload
   getProductId: (state) => (id) => {
-    return state.products.find((product) => product.id === id)
+    return state.products.find((product) => product.id.toString() === id)
+  },
+}
+export const mutations = {
+  addItem(state, id) {
+    const item = state.products.find((product) => product.id === id)
+    state.myRentals.push(item)
   },
 }
